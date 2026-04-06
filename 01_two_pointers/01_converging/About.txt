@@ -1,0 +1,7 @@
+Common scenarios where this pattern is applied include:
+
+Finding two numbers in a sorted array that add up to a specific target.
+Identifying triplets or quadruplets that sum to zero or another value.
+Reversing a string or checking if a sequence is a palindrome.
+Squaring a sorted array containing negative numbers and keeping the result sorted.
+By converting a brute-force approach into a linear scan, this pattern typically reduces time complexity from O(N²) to O(N). It is also space-efficient, usually operating in O(1) constant space since it relies on index manipulation rather than auxiliary data structures.

@@ -1,0 +1,23 @@
+You'll see this pattern in problems like Move Zeroes, Remove Duplicates from Sorted Array, and Sort Array By Parity. The common thread: you’re asked to rearrange or filter elements, maintain order (sometimes), and do it all without extra arrays. Think of it as tidying up your room by moving things around with both hands—no extra boxes allowed!
+
+Two Pointers: The Dynamic Duo
+Pointer 1 (Slow/Write Pointer): Think of this as your "organizer"—it marks where the next valid element should go.
+Pointer 2 (Fast/Read Pointer): This is your "scout"—it scans through the array, looking for elements that need to be moved or kept.
+
+Step-by-Step Process
+Start both pointers at the beginning.
+Move the fast pointer through each element.
+
+When the fast pointer finds a "keeper" (e.g., non-zero, unique, even), copy or swap it to the position marked by the slow pointer.
+Advance the slow pointer only when you place a valid element.
+Time & Space Complexity
+Time: Usually O(n), since each element is checked once—like reading a book page by page.
+Space: O(1), since you don’t use extra space—just a couple of variables.
+
+Decision Tree:
+Order matters? Use copy-over (write pointer only advances for valid elements).
+Order doesn’t matter? You can swap with the end for quick removal.
+
+NOTES:
+👉 Left side (nums[write]) = the place being UPDATED -- slow
+👉 Right side (nums[read]) = the value you are COPYING from -- fast

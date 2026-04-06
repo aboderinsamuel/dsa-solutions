@@ -1,0 +1,58 @@
+// struct Person {
+//     string name;
+//     int age;
+//     float height;
+// };
+//
+// // usage
+// Person p;
+// p.name = "John";
+// p.age = 25;
+// A struct is a way to group related data together under one name.
+// A class is a blueprint for creating objects that bundle data + behavior (methods) together.
+class BankAccount {
+private:
+    double balance = 1000.0;
+
+public:
+    // ✅ inside the class — can read AND return private value
+    double getBalance() { return balance; }
+
+    // ✅ inside the class — can cout private value
+    void printBalance() { cout << balance << endl; }
+};
+
+int main() {
+    BankAccount acc;
+
+    cout << acc.balance;      // ❌ COMPILER ERROR — outside class
+    acc.printBalance();       // ✅ works — inside class does the cout
+    acc.getBalance();         // ✅ works — inside class does the return
+}
+```
+
+---
+
+**The real rule is simpler:**
+```
+Private = only accessible INSIDE the class
+Public  = accessible ANYWHERE
+
+class Example {
+private:
+    int x = 10;
+
+public:
+    void insideClass() {
+        x = 50;           // ✅ read  — inside class
+        cout << x;        // ✅ write — inside class
+        return x;         // ✅ return — inside class
+    }
+};
+
+int main() {
+    Example e;
+    e.x = 50;             // ❌ write  — outside class
+    cout << e.x;          // ❌ read   — outside class
+    e.insideClass();      // ✅ only way to interact with x
+}
