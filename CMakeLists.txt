@@ -179,4 +179,7 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         02_array_matrix/10_inplace_rotation/rotate-array.cpp
         02_array_matrix/10_inplace_rotation/rotate-image.cpp
         02_array_matrix/11_spiral_traversal/spiral-matrix.cpp
+        02_array_matrix/11_spiral_traversal/spiral-matrix-ii.cpp
+        02_array_matrix/11_spiral_traversal/spiral-matrix-iii.cpp
+        02_array_matrix/11_spiral_traversal/spiral-matrix-iv.cpp
 )
