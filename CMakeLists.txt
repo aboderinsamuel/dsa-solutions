@@ -182,4 +182,5 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         02_array_matrix/11_spiral_traversal/spiral-matrix-ii.cpp
         02_array_matrix/11_spiral_traversal/spiral-matrix-iii.cpp
         02_array_matrix/11_spiral_traversal/spiral-matrix-iv.cpp
+        02_array_matrix/12_set_matrix_zeroes/set-matrix-zero.cpp
 )
