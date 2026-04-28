@@ -1,4 +1,6 @@
-You'll see this pattern in problems like Move Zeroes, Remove Duplicates from Sorted Array, and Sort Array By Parity. The common thread: you’re asked to rearrange or filter elements, maintain order (sometimes), and do it all without extra arrays. Think of it as tidying up your room by moving things around with both hands—no extra boxes allowed!
+You'll see this pattern in problems like Move Zeroes, Remove Duplicates from Sorted Array, and Sort Array By Parity.
+The common thread: you’re asked to rearrange or filter elements, maintain order (sometimes), and do it all without extra arrays.
+Think of it as tidying up your room by moving things around with both hands—no extra boxes allowed!
 
 Two Pointers: The Dynamic Duo
 Pointer 1 (Slow/Write Pointer): Think of this as your "organizer"—it marks where the next valid element should go.

@@ -1,6 +1,9 @@
 //
 // Created by USER on 4/3/2026.
 //
+#include <iostream>
+using namespace std;
+
 class Solution {
 public:
     bool isSubsequence(string s, string t) {

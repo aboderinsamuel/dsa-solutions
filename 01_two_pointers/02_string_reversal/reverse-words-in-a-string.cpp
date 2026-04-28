@@ -19,7 +19,9 @@ public:
                 break;
 
             while (i < n && s[i] != ' '){
-                s[right++] = s[i++];
+                s[right] = s[i]; // I expanded: s[right++] = s[i++];
+                right++;
+                i++;
             }
             reverse(s.begin() + left, s.begin() + right);
             s[right++] = ' ';
