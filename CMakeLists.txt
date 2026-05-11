@@ -185,4 +185,6 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         02_array_matrix/12_set_matrix_zeroes/set-matrix-zero.cpp
         01_two_pointers/06_string_comparison_special_chars/removing_stars_from_a_string.cpp
         02_array_matrix/08_plus_one/multiply_strings.cpp
+        02_array_matrix/12_set_matrix_zeroes/game-of-life.cpp
+        02_array_matrix/12_set_matrix_zeroes/diagonal-traverse.cpp
 )
