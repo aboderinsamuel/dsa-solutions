@@ -1,0 +1,5 @@
+Time Complexity:
+We visit every node in both lists exactly once. So, if n and m are the lengths of the lists, the time is O(n + m).
+
+Space Complexity:
+worst case due to recursive calls : O(n +m), but normally O(1)

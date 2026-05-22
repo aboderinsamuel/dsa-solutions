@@ -1,0 +1,2 @@
+HappyNumber -- two Pointers
+Find the duplicate number -- two pointers

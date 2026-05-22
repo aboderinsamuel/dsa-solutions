@@ -187,4 +187,30 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         02_array_matrix/08_plus_one/multiply_strings.cpp
         02_array_matrix/12_set_matrix_zeroes/game-of-life.cpp
         02_array_matrix/12_set_matrix_zeroes/diagonal-traverse.cpp
+        02_array_matrix/13_product_except_self/product-of-array-except-self.cpp
+        02_array_matrix/13_product_except_self/longest-mountain-in-array.cpp
+        02_array_matrix/14_hashing_frequency_map/valid-anagram.cpp
+        02_array_matrix/14_hashing_frequency_map/group-anagrams.cpp
+        02_array_matrix/14_hashing_frequency_map/top-k-frequent-elements.cpp
+        02_array_matrix/14_hashing_frequency_map/sort-characters-by-frequency.cpp
+        02_array_matrix/14_hashing_frequency_map/task-Scheduler.cpp
+        02_array_matrix/15_hashing_seen_check/Intersection_of_two_arrays.cpp
+        02_array_matrix/15_hashing_seen_check/linkedlist-cycle.cpp
+        02_array_matrix/15_hashing_seen_check/longestSubstring-without-repeating-characters.cpp
+        "02_array_matrix/16_prefix_sum-Subarray and Range Query/minimumSize-subarray-sum.cpp"
+        "02_array_matrix/16_prefix_sum-Subarray and Range Query/max-consecutive-ones-iii.cpp"
+        "02_array_matrix/16_prefix_sum-Subarray and Range Query/product-of-the-last-k-numbers.cpp"
+        "02_array_matrix/16_prefix_sum-Subarray and Range Query/frequency-of-the-most-frequent-element.cpp"
+        "02_array_matrix/16_prefix_sum-Subarray and Range Query/split-array-largest-sum.cpp"
+        02_array_matrix/17_Array-cyclic_sort/missing-number.cpp
+        02_array_matrix/17_Array-cyclic_sort/find_all_numbers_disappeard_in_an_array.cpp
+        02_array_matrix/17_Array-cyclic_sort/find-all-duplicates-in-an-array.cpp
+        02_array_matrix/17_Array-cyclic_sort/first-missing-positive.cpp
+        03_linked_list/18_merge_two_sorted_lists/approaches.cpp
+        03_linked_list/18_merge_two_sorted_lists/merge-two-sorted-lists.cpp
+        03_linked_list/18_merge_two_sorted_lists/extra.cpp
+        03_linked_list/18_merge_two_sorted_lists/merge-k-sorted-lists.cpp
+        03_linked_list/18_merge_two_sorted_lists/merge-k-full.cpp
+        03_linked_list/19_inplace_reversal/Palindrome_linked_list.cpp
+        03_linked_list/19_inplace_reversal/reverse-linked-list.cpp
 )

@@ -1,0 +1,2 @@
+productOfArrayExceptSelf -- Product except self
+find duplicate numner -- fast and slow
