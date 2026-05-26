@@ -213,4 +213,5 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         03_linked_list/18_merge_two_sorted_lists/merge-k-full.cpp
         03_linked_list/19_inplace_reversal/Palindrome_linked_list.cpp
         03_linked_list/19_inplace_reversal/reverse-linked-list.cpp
+        03_linked_list/21_addition_of_numbers/plus-one-linked-list.cpp
 )
