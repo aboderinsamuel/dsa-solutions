@@ -214,4 +214,5 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         03_linked_list/19_inplace_reversal/Palindrome_linked_list.cpp
         03_linked_list/19_inplace_reversal/reverse-linked-list.cpp
         03_linked_list/21_addition_of_numbers/plus-one-linked-list.cpp
+        04_trees/23_recursive_preorder/Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.cpp
 )
