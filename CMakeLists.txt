@@ -215,4 +215,18 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         03_linked_list/19_inplace_reversal/reverse-linked-list.cpp
         03_linked_list/21_addition_of_numbers/plus-one-linked-list.cpp
         04_trees/23_recursive_preorder/Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.cpp
+        04_trees/24_recursive_inorder/binary-tree-inorder-traversal.cpp
+        04_trees/24_recursive_inorder/kth-smallest-element-in-a-bst.cpp
+        04_trees/25_recursive_postorder/balanced-binary-tree.cpp
+        04_trees/25_recursive_postorder/kth-largest-perfect-subtree-size-in-binary-tree.cpp
+        04_trees/25_recursive_postorder/maximum-depth-of-binary-tree.cpp
+        04_trees/25_recursive_postorder/house-robber-iii.cpp
+        04_trees/25_recursive_postorder/binary-tree-maximum-path-sum.cpp
+        04_trees/25_recursive_postorder/height-of-binary-tree-after-subtree-removal-queries.cpp
+        04_trees/27_lowest_common_ancestor/lowest-common-ancestor-of-a-binary-tree.cpp
+        04_trees/27_lowest_common_ancestor/lowest-common-ancestor-of-a-bst.cpp
+        "04_trees/26_level_order_traversal-(Breadth-First-Search)/find-largest-value-in-each-tree-node.cpp"
+        "04_trees/26_level_order_traversal-(Breadth-First-Search)/maximum-level-sum-of-a-binary-tree.cpp"
+        04_trees/28_serialization_deserialization/subtree-of-another-tree.cpp
+        04_trees/28_serialization_deserialization/serialize-and-deserialize-binary-tree.cpp
 )
