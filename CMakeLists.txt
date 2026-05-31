@@ -229,4 +229,6 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         "04_trees/26_level_order_traversal-(Breadth-First-Search)/maximum-level-sum-of-a-binary-tree.cpp"
         04_trees/28_serialization_deserialization/subtree-of-another-tree.cpp
         04_trees/28_serialization_deserialization/serialize-and-deserialize-binary-tree.cpp
+        04_trees/28_serialization_deserialization/serialize-and-deserialize-BST.cpp
+        04_trees/28_serialization_deserialization/find-duplicate-subtrees.cpp
 )
