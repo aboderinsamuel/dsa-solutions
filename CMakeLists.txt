@@ -231,4 +231,9 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         04_trees/28_serialization_deserialization/serialize-and-deserialize-binary-tree.cpp
         04_trees/28_serialization_deserialization/serialize-and-deserialize-BST.cpp
         04_trees/28_serialization_deserialization/find-duplicate-subtrees.cpp
+        05_sliding_window/29_fixed_size_window/maxSum-subarray-of-sizeK.cpp
+        05_sliding_window/30_variable_size_window/min-subarray-len.cpp
+        "05_sliding_window/29_fixed_size_window/3318-Find-X-Sum-of-All-K-Long-Subarrays-I.cpp"
+        05_sliding_window/29_fixed_size_window/3254-find-the-power-of-K-size-Subarrays-i.cpp
+        05_sliding_window/30_variable_size_window/contains-duplicate-ii.cpp
 )
