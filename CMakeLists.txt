@@ -236,4 +236,5 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         "05_sliding_window/29_fixed_size_window/3318-Find-X-Sum-of-All-K-Long-Subarrays-I.cpp"
         05_sliding_window/29_fixed_size_window/3254-find-the-power-of-K-size-Subarrays-i.cpp
         05_sliding_window/30_variable_size_window/contains-duplicate-ii.cpp
+        05_sliding_window/30_variable_size_window/3347-maximum-frequency-of-an-element-after-performing-operations-ii.cpp
 )
