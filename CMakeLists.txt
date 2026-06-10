@@ -237,4 +237,10 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         05_sliding_window/29_fixed_size_window/3254-find-the-power-of-K-size-Subarrays-i.cpp
         05_sliding_window/30_variable_size_window/contains-duplicate-ii.cpp
         05_sliding_window/30_variable_size_window/3347-maximum-frequency-of-an-element-after-performing-operations-ii.cpp
+        06_stack/33_valid_parentheses/valid-parenthesis.cpp
+        06_stack/34_min_stack_design/minStack.cpp
+        06_stack/37_monotonic_stack/496-Next-Greater-Element-I.cpp
+        06_stack/37_monotonic_stack/496-Next-Greater-Element-I-BRUTEFORCE.cpp
+        06_stack/37_monotonic_stack/739-Daily-Temperatures.cpp
+        07_heap_priority_queue/39_top_k_elements/take-gifts-from-the-richest-pile.cpp
 )
