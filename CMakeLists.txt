@@ -243,4 +243,9 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         06_stack/37_monotonic_stack/496-Next-Greater-Element-I-BRUTEFORCE.cpp
         06_stack/37_monotonic_stack/739-Daily-Temperatures.cpp
         07_heap_priority_queue/39_top_k_elements/take-gifts-from-the-richest-pile.cpp
+        07_heap_priority_queue/39_top_k_elements/kth-largest-element-in-a-stream.cpp
+        08_binary_search/43_sorted_array_search/binarySearch.cpp
+        08_binary_search/43_sorted_array_search/search-a-2D-array.cpp
+        08_binary_search/46_binary_search_on_answer/Koko-eating-bananas.cpp
+        08_binary_search/47_median_kth_of_two_arrays/median_of_two_sorted_arrays.cpp
 )

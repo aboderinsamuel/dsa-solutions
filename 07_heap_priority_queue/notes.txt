@@ -1,0 +1,5 @@
+Interview trick to remember
+Want the largest repeatedly → Max Heap
+Want the smallest repeatedly → Min Heap
+Want the kth largest repeatedly → Min Heap of size k
+Want the kth smallest repeatedly → Max Heap of size k
