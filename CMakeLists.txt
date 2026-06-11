@@ -250,4 +250,5 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         08_binary_search/47_median_kth_of_two_arrays/median_of_two_sorted_arrays.cpp
         09_graphs/48_dfs_connected_components/flood-fill.cpp
         09_graphs/48_dfs_connected_components/200-number-of-islands.cpp
+        09_graphs/49_bfs_connected_components/rotting-oranges.cpp
 )
