@@ -251,4 +251,9 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         09_graphs/48_dfs_connected_components/flood-fill.cpp
         09_graphs/48_dfs_connected_components/200-number-of-islands.cpp
         09_graphs/49_bfs_connected_components/rotting-oranges.cpp
+        09_graphs/56_bidirectional_bfs/bus-routes.cpp
+        13_strings/87_palindrome_check/valid_palindrome.cpp
+        13_strings/87_palindrome_check/valid_palindrome_check.cpp
+        15_design/96_general_design/insert_delete_getRandom.cpp
+        15_design/96_general_design/LRU_Cache.cpp
 )
