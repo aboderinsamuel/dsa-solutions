@@ -256,4 +256,18 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         13_strings/87_palindrome_check/valid_palindrome_check.cpp
         15_design/96_general_design/insert_delete_getRandom.cpp
         15_design/96_general_design/LRU_Cache.cpp
+        14_bit_manipulation/92_power_of_two_four/power_of_2.cpp
+        14_bit_manipulation/92_power_of_two_four/power_of_four.cpp
+        14_bit_manipulation/92_power_of_two_four/power_of_3.cpp
+        12_dynamic_programming/74_fibonacci_style/climbing_stairs.cpp
+        12_dynamic_programming/74_fibonacci_style/fibonacci_number.cpp
+        12_dynamic_programming/74_fibonacci_style/minCost_climbing_stairs.cpp
+        04_trees/24_recursive_inorder/same-tree.cpp
+        04_trees/24_recursive_inorder/reverse_binary_trees.cpp
+        12_dynamic_programming/74_fibonacci_style/house_robber.cpp
+        12_dynamic_programming/74_fibonacci_style/house_robber_ii.cpp
+        14_bit_manipulation/93_bitwise_and_set_bit_count/number_of_1_bits.cpp
+        14_bit_manipulation/93_bitwise_and_set_bit_count/counting_bits.cpp
+        14_bit_manipulation/93_bitwise_and_set_bit_count/add_binary.cpp
+        14_bit_manipulation/93_bitwise_and_set_bit_count/reverse_bits.cpp
 )

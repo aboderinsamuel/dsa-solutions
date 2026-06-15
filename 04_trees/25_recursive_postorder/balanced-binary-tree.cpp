@@ -29,4 +29,5 @@ public:
     }
     bool isBalanced(TreeNode* root) {
         return check(root) != -1;
+    }
 };
