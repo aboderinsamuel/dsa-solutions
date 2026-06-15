@@ -147,6 +147,12 @@ add_all_cpp_in_dir(${CMAKE_SOURCE_DIR}/15_design/97_tries)
 add_all_cpp_in_dir(${CMAKE_SOURCE_DIR}/16_segment_fenwick_tree/98_fenwick_tree_prefix_queries)
 add_all_cpp_in_dir(${CMAKE_SOURCE_DIR}/16_segment_fenwick_tree/99_segment_tree_range_sum)
 
+# ======== XVII. INTERVAL PATTERNS ========
+add_all_cpp_in_dir(${CMAKE_SOURCE_DIR}/17_intervals/100_insert_and_merge)
+add_all_cpp_in_dir(${CMAKE_SOURCE_DIR}/17_intervals/101_non_overlapping_intervals)
+add_all_cpp_in_dir(${CMAKE_SOURCE_DIR}/17_intervals/102_meeting_rooms)
+add_all_cpp_in_dir(${CMAKE_SOURCE_DIR}/17_intervals/103_min_interval_query)
+
 
 add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         01_two_pointers/01_converging/3sum.cpp
