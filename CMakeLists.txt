@@ -276,4 +276,8 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         14_bit_manipulation/93_bitwise_and_set_bit_count/counting_bits.cpp
         14_bit_manipulation/93_bitwise_and_set_bit_count/add_binary.cpp
         14_bit_manipulation/93_bitwise_and_set_bit_count/reverse_bits.cpp
+        10_greedy/lemonade_change.cpp
+        10_greedy/maximum_subarray.cpp
+        10_greedy/65_gas_station_circuit/Gas_Station.cpp
+        10_greedy/62_jump_game/jump-game.cpp
 )
