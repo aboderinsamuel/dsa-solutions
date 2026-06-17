@@ -284,4 +284,10 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         10_greedy/61_interval_merging_scheduling/partition_labels.cpp
         10_greedy/hand_of_straights.cpp
         10_greedy/Candy.cpp
+        17_intervals/non_overlapping_intervals.cpp
+        11_backtracking/sum-of-all-subset-xor-totals.cpp
+        11_backtracking/67_subsets/subsets.cpp
+        11_backtracking/67_subsets/subsets_ii.cpp
+        11_backtracking/68_permutations/permutations.cpp
+        11_backtracking/68_permutations/permutations_ii.cpp
 )
