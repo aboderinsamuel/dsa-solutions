@@ -282,4 +282,6 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         10_greedy/62_jump_game/jump-game.cpp
         10_greedy/62_jump_game/jump_game_ii.cpp
         10_greedy/61_interval_merging_scheduling/partition_labels.cpp
+        10_greedy/hand_of_straights.cpp
+        10_greedy/Candy.cpp
 )
