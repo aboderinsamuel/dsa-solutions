@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
 project(cpp_dsa_thita)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 function(add_all_cpp_in_dir DIR_PATH)
