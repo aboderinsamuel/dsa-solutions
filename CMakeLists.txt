@@ -290,4 +290,14 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         11_backtracking/67_subsets/subsets_ii.cpp
         11_backtracking/68_permutations/permutations.cpp
         11_backtracking/68_permutations/permutations_ii.cpp
+        11_backtracking/69_combination_sum/combinations.cpp
+        11_backtracking/69_combination_sum/letter_combinations_of_a_phone_number.cpp
+        11_backtracking/69_combination_sum/combination_sum.cpp
+        11_backtracking/69_combination_sum/combination_sum_ii.cpp
+        11_backtracking/73_n_queens_constraint_satisfaction/N_Queens.cpp
+        11_backtracking/73_n_queens_constraint_satisfaction/n_queens_.cpp
+        11_backtracking/73_n_queens_constraint_satisfaction/n_queens_.cpp
+        11_backtracking/73_n_queens_constraint_satisfaction/N_Queens_II.cpp
+        11_backtracking/72_palindrome_partitioning/Palindrome_Partitioning.cpp
+        11_backtracking/71_word_search_grid_path/word_search.cpp
 )
