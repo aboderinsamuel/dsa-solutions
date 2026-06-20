@@ -300,4 +300,11 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         11_backtracking/73_n_queens_constraint_satisfaction/N_Queens_II.cpp
         11_backtracking/72_palindrome_partitioning/Palindrome_Partitioning.cpp
         11_backtracking/71_word_search_grid_path/word_search.cpp
+        00_foundations/00b_recursion_fundamentals/nn.cpp
+        12_dynamic_programming/N-th_tribonacci.cpp
+        12_dynamic_programming/78_coin_change/coin_change.cpp
+        12_dynamic_programming/81_longest_increasing_subsequence/longest_increasing_subsequence.cpp
+        12_dynamic_programming/Decode_ways.cpp
+        12_dynamic_programming/75_kadane_max_min_subarray/maximum_product_subarray.cpp
+        12_dynamic_programming/80_word_break/word_break.cpp
 )
