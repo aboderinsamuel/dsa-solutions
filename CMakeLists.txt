@@ -307,4 +307,30 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         12_dynamic_programming/Decode_ways.cpp
         12_dynamic_programming/75_kadane_max_min_subarray/maximum_product_subarray.cpp
         12_dynamic_programming/80_word_break/word_break.cpp
+        09_graphs/find_the_town_judge.cpp
+        09_graphs/island_perimeter.cpp
+        09_graphs/48_dfs_connected_components/clone_graph_unsafe.cpp
+        09_graphs/49_bfs_connected_components/cloned_graph.cpp
+        01_two_pointers/01_converging/trapping_rain_water.cpp
+        05_sliding_window/29_fixed_size_window/permutation_in_string.cpp
+        05_sliding_window/29_fixed_size_window/643_maximum_average_subarray_i.cpp
+        05_sliding_window/29_fixed_size_window/find_all_anagrams_in_a_string.cpp
+        05_sliding_window/30_variable_size_window/longest_repeating_character_replacement.cpp
+        05_sliding_window/30_variable_size_window/minimum_window_substring.cpp
+        06_stack/evaluate_reverse_polish_notation.cpp
+        03_linked_list/19_inplace_reversal/reverse_linked_list_ii.cpp
+        03_linked_list/19_inplace_reversal/reverse-nodes-in-kGroup.cpp
+        12_dynamic_programming/generate_parenthesis.cpp
+        03_linked_list/linkedList_Cycle_II.cpp
+        15_design/96_general_design/LRUCACHE_2.cpp
+        06_stack/38_largest_rectangle_histogram/largest_rectangle_in_histogram.cpp
+        06_stack/Car_Fleet.cpp
+        06_stack/implement_queue_using_stacks.cpp
+        06_stack/implement_stacks_using_queue.cpp
+        06_stack/BaseBallGame.cpp
+        07_heap_priority_queue/39_top_k_elements/last_stone_weight.cpp
+        07_heap_priority_queue/39_top_k_elements/k_closest_points_to_origin.cpp
+        07_heap_priority_queue/car_pooling.cpp
+        07_heap_priority_queue/39_top_k_elements/kth_largest_element_in_an_array.cpp
+        07_heap_priority_queue/IPO.cpp
 )
