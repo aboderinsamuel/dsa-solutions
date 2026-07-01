@@ -28,6 +28,7 @@ public:
 
     // Encodes a tree to a single string.
     string serialize(TreeNode* root) {
+        if (!root) return "";
         string res;
         serializeHelper(root, res);
         return res;

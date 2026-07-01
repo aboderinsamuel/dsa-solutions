@@ -14,36 +14,42 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-
 class Codec {
 public:
-    string serialize(TreeNode* root) {}
-    TreeNode* deserialize(string data) {}
-private:
-    //Helper function for recursive serialization
-    void serialHelper(TreeNode* node, ostringstream& out)
-    {
-        if (!node)
-        {
-            out << "N ";
-            return;
-        }
-        out << node->val << " ";
-        serialHelper(node->left, out);
-        serialHelper(node->right, out);
+
+    // Encodes a tree to a single string.
+    string serialize(TreeNode* root) {
+        if(!root) return "#";
+
+        //preorder traversal: root, left, right
+        return to_string(root->val) + "," + serialize(root->left) + "," + serialize(root->right);
     }
-    //Helper function for recursive desrialization
-    TreeNode* deserializeHelper(istringstream& in)
-    {
-        string val;
-        in >> val;
-        if (val == "N")
-        {
-            return nullptr;
-        }
-        TreeNode* node = new TreeNode(stoi(val));
-        node->left = deserializeHelper(in);
-        node->right = deserializeHelper(in);
+
+    // Decodes your encoded data to tree.
+    TreeNode* deserialize(string data) {
+        int index = 0;
+        return deserializeHelper(data, index);
+    }
+private:
+    TreeNode* deserializeHelper(const string& data, int& index){
+        //find the next value
+        if(index >= data.size()) return nullptr;
+
+        //find the delimeter position
+        int delimiterPos = data.find(',', index);
+        string token = data.substr(index, delimiterPos-index);
+        index = delimiterPos + 1;
+
+        //handle null nodes
+        if(token == "#") return nullptr;
+
+        //create node with value
+        TreeNode* node = new TreeNode(stoi(token));
+
+        //recursively build left and right subtrees
+        node->left = deserializeHelper(data, index);
+        node->right = deserializeHelper(data, index);
         return node;
+
     }
 };

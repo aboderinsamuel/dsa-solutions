@@ -31,3 +31,20 @@ public:
         return check(root) != -1;
     }
 };
+
+/////////////////////////////////////////////
+///class Solution {
+public:
+bool balanced = true;
+int dfs(TreeNode* node){
+    if(node == nullptr) return 0;
+    int left = dfs(node->left);
+    int right = dfs(node->right);
+    if(abs(left-right) > 1) balanced = false;
+    return 1+max(left, right);
+}
+bool isBalanced(TreeNode* root) {
+    dfs(root);
+    return balanced;
+}
+};

@@ -333,4 +333,15 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         07_heap_priority_queue/car_pooling.cpp
         07_heap_priority_queue/39_top_k_elements/kth_largest_element_in_an_array.cpp
         07_heap_priority_queue/IPO.cpp
+        04_trees/23_recursive_preorder/binary-tree-preorder-traversal.cpp
+        04_trees/25_recursive_postorder/binary_tree_postorder_traversal.cpp
+        04_trees/invert-binary-tree.cpp
+        04_trees/diameter_of_binary_tree.cpp
+        04_trees/insert_into_a_binarySearchTree.cpp
+        04_trees/delete_node_in_a_BST.cpp
+        "04_trees/26_level_order_traversal-(Breadth-First-Search)/binary-tree-level-order-traversal.cpp"
+        "04_trees/26_level_order_traversal-(Breadth-First-Search)/binary-tree-rightside-view.cpp"
+        "04_trees/26_level_order_traversal-(Breadth-First-Search)/validate_BST.cpp"
+        "04_trees/26_level_order_traversal-(Breadth-First-Search)/minimum_depth_of_binary_tree.cpp"
+        04_trees/delete_leaves_with_a_given_value.cpp
 )
