@@ -2,33 +2,25 @@
 using namespace std;
 class Solution {
 public:
-    void dfs(vector<vector<char>>&grid, int r, int c) {
-        int m = grid.size();
-        int n = grid[0].size();
-
-        //the stop conditions
-        if (c < 0 || c >= n || r < 0 || r >= m)return;
-        if (grid[r][c] != '1')return;
-
-        //mark visited (THIS replaces visited array)
-        grid[r][c] = '0';
-
-        //explore neighbors
-        dfs(grid, r+1, c);
-        dfs(grid, r-1, c);
-        dfs(grid, r, c+1);
-        dfs(grid, r, c-1);
+    vector<pair<int, int>> directions = {{0,1},{1,0},{-1,0},{0,-1}};
+    void dfs(vector<vector<char>>& grid, int row, int col){
+        if(row < 0 || row >= grid.size() || col >= grid[0].size() || col < 0) return;
+        if(grid[row][col] == '0') return;
+        grid[row][col] = '0';
+        for(auto [dr, dc] : directions){
+            dfs(grid, row+dr, col+dc);
+        }
     }
     int numIslands(vector<vector<char>>& grid) {
-        int m = grid.size();
-        int n = grid[0].size();
+        int rows = grid.size();
+        int cols = grid[0].size();
         int islands = 0;
 
-        for (int i=0; i<m; i++) {
-            for (int j=0; j<n; j++) {
-                if (grid[i][j] == '1') {
+        for(int row=0; row<rows; row++){
+            for(int col=0; col<cols; col++){
+                if(grid[row][col] == '1'){
                     islands++;
-                    dfs(grid, i, j);
+                    dfs(grid, row, col);
                 }
             }
         }

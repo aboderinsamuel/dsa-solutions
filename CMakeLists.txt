@@ -310,7 +310,7 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         09_graphs/find_the_town_judge.cpp
         09_graphs/island_perimeter.cpp
         09_graphs/48_dfs_connected_components/clone_graph_unsafe.cpp
-        09_graphs/49_bfs_connected_components/cloned_graph.cpp
+        09_graphs/49_bfs_connected_components/clone_graph.cpp
         01_two_pointers/01_converging/trapping_rain_water.cpp
         05_sliding_window/29_fixed_size_window/permutation_in_string.cpp
         05_sliding_window/29_fixed_size_window/643_maximum_average_subarray_i.cpp
@@ -344,4 +344,48 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         "04_trees/26_level_order_traversal-(Breadth-First-Search)/validate_BST.cpp"
         "04_trees/26_level_order_traversal-(Breadth-First-Search)/minimum_depth_of_binary_tree.cpp"
         04_trees/delete_leaves_with_a_given_value.cpp
+        "09_graphs/49_bfs_connected_components/open_the_lock.cpp"
+        09_graphs/49_bfs_connected_components/open_the_lock.cpp
+        09_graphs/49_bfs_connected_components/shortest_path_in_Binary_matrix.cpp
+        09_graphs/49_bfs_connected_components/word_ladder.cpp
+        09_graphs/surrounded_regions.cpp
+        09_graphs/max_area_of_island.cpp
+        09_graphs/48_dfs_connected_components/pacific_atlantic_water_flow.cpp
+        09_graphs/multiSource-BFS/walls_and_gates.cpp
+        09_graphs/multiSource-BFS/01_matrix.cpp
+        09_graphs/Dijkstra/network_Delay_Time.cpp
+        09_graphs/Dijkstra/path_with_minimum_effort.cpp
+        09_graphs/Bellman-Ford/cheapest_flights_within_k_stops.cpp
+        09_graphs/52_bfs_topological_sort_kahn/course_schedule.cpp
+        09_graphs/52_bfs_topological_sort_kahn/course_schedule_khan.cpp
+        09_graphs/52_bfs_topological_sort_kahn/course_Schedule_ii.cpp
+        09_graphs/Dijkstra/swim_in_rising_water.cpp
+        09_graphs/53_union_find_dsu/number_of_connected_components_in_an_undirected_graph.cpp
+        09_graphs/53_union_find_dsu/graph-valid-tree.cpp
+        09_graphs/53_union_find_dsu/REDUNDANT_CONNECTION.cpp
+        09_graphs/53_union_find_dsu/accounts_merge.cpp
+        09_graphs/54_shortest_path_bellman_ford/cheapest_flights_within_k_stops.cpp
+        09_graphs/53_union_find_dsu/number_of_provinces.cpp
+        02_array_matrix/concatenation_of_array.cpp
+        02_array_matrix/longest_common_prefix.cpp
+        02_array_matrix/remove_element.cpp
+        02_array_matrix/majority_element.cpp
+        02_array_matrix/design_hashset.cpp
+        sort_an_array.cpp
+        02_array_matrix/encode_and_decode_string.cpp
+        "02_array_matrix/16_prefix_sum-Subarray and Range Query/range_sum_query_2D_immutable.cpp"
+        02_array_matrix/15_hashing_seen_check/valid_sudoku.cpp
+        longest_consecutive_sequence.cpp
+        10_greedy/63_buy_sell_stock/best_time_to_buy_and_sell_stock_ii.cpp
+        02_array_matrix/majority_element_ii.cpp
+        02_array_matrix/prefix_sum.cpp
+        01_two_pointers/merge_strings_alternatively.cpp
+        10_greedy/63_buy_sell_stock/best_time_to_buy_and_sell_stock.cpp
+        05_sliding_window/k-closest-element.cpp
+        05_sliding_window/29_fixed_size_window/sliding_window_maximum.cpp
+        12_dynamic_programming/77_01_knapsack/partition_equal_subsets.cpp
+        12_dynamic_programming/count_dp/combination_sum_iv.cpp
+        08_binary_search/search_insert_position.cpp
+        08_binary_search/guess_numner_higher_or_lower.cpp
+        08_binary_search/sqrt_x.cpp
 )

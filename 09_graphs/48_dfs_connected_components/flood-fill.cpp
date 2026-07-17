@@ -2,34 +2,23 @@
 using namespace std;
 class Solution {
 public:
-    void dfs(vector<vector<int>>& image, int row, int col, int originalColor,  int newColor){
-        int rows = image.size();
-        int cols = image[0].size();
-
-        //case1: out of bounds
-        if(row < 0 || row >= rows || col < 0 || col >= cols){
-            return;
-        }
-        //case2: wrong color
-        if(image[row][col] != originalColor){
-            return;
-        }
-        //paint current cell
+    vector<pair<int, int>> directions = {{-1,0},{1,0},{0,-1},{0,1}};
+    void dfs(vector<vector<int>>& image, int row, int col, int oldColor, int newColor){
+        //Outside the grid
+        if(row < 0 || row >= image.size() || col < 0 || col >= image[0].size()) return;
+        //different color?
+        if(image[row][col] != oldColor) return;
+        //paint this cell
         image[row][col] = newColor;
-        //explore 4 directions
-        dfs(image, row+1, col, originalColor, newColor); //Down
-        dfs(image, row-1, col, originalColor, newColor); //Up
-        dfs(image, row, col+1, originalColor, newColor); //right
-        dfs(image, row, col-1, originalColor, newColor); //left
+        for(auto [dr,dc] : directions){
+            dfs(image, row+dr, col+dc, oldColor, newColor);
+        }
     }
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
-        int originalColor = image[sr][sc];
-        if(originalColor == color){
-            return image;
-        }
-        //dfs from the starting pixel
-        dfs(image, sr, sc, originalColor, color);
-        //return modified image
+        int oldColor = image[sr][sc];
+        if(oldColor == color) return image;
+        dfs(image, sr, sc, oldColor, color);
         return image;
+
     }
 };
