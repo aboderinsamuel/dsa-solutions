@@ -353,7 +353,7 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         09_graphs/48_dfs_connected_components/pacific_atlantic_water_flow.cpp
         09_graphs/multiSource-BFS/walls_and_gates.cpp
         09_graphs/multiSource-BFS/01_matrix.cpp
-        09_graphs/Dijkstra/network_Delay_Time.cpp
+        09_graphs/Bellman-Ford/network_Delay_Time.cpp
         09_graphs/Dijkstra/path_with_minimum_effort.cpp
         09_graphs/Bellman-Ford/cheapest_flights_within_k_stops.cpp
         09_graphs/52_bfs_topological_sort_kahn/course_schedule.cpp
@@ -388,4 +388,10 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         08_binary_search/search_insert_position.cpp
         08_binary_search/guess_numner_higher_or_lower.cpp
         08_binary_search/sqrt_x.cpp
+        06_stack/asteroid_collision.cpp
+        06_stack/online_stock_plan.cpp
+        06_stack/simplify_path.cpp
+        11_backtracking/71_word_search_grid_path/word_search_ii.cpp
+        12_dynamic_programming/79_longest_common_subsequence/longest_common_sunsequence.cpp
+        12_dynamic_programming/79_longest_common_subsequence/longest_palindromic_subsequence.cpp
 )
