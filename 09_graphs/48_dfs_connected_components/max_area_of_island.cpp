@@ -27,3 +27,31 @@ public:
         return maxArea;
     }
 };
+
+//solution 2:
+class Solution {
+public:
+    int dfs(vector<vector<int>>& grid, int row,int col){
+        int m = grid.size();
+        int n = grid[0].size();
+
+        //stop conditions
+        if(r < 0 || c < 0 || r >= m || c >= n) return 0;
+        if(grid[r][c] == 0) return 0;
+        grid[r][c] = 0;
+        return 1 + dfs(grid, r, c+1)+ dfs(grid, r, c-1) + dfs(grid, r+1, c) + dfs(grid, r-1, c);
+    }
+    int maxAreaOfIsland(vector<vector<int>>& grid) {
+        int m = grid.size();
+        int n = grid[0].size();
+        int best = 0;
+        for(int r=0; r<m; r++){
+            for(int c=0; c<n; c++){
+                if(grid[r][c] == 1){
+                    best = max(best, dfs(grid, r,  c));
+                }
+            }
+        }
+        return best;
+    }
+};

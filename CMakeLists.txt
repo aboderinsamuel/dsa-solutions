@@ -8,6 +8,8 @@ function(add_all_cpp_in_dir DIR_PATH)
 file(GLOB CPP_FILES CONFIGURE_DEPENDS "${DIR_PATH}/*.cpp")
 foreach(file ${CPP_FILES})
 get_filename_component(EXE_NAME ${file} NAME_WE)
+# Sanitize: CMake target names can't contain spaces or other special chars
+string(REGEX REPLACE "[^A-Za-z0-9_]" "_" EXE_NAME "${EXE_NAME}")
 add_executable(${EXE_NAME} ${file})
 endforeach()
 endfunction()
@@ -249,7 +251,7 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         06_stack/37_monotonic_stack/496-Next-Greater-Element-I-BRUTEFORCE.cpp
         06_stack/37_monotonic_stack/739-Daily-Temperatures.cpp
         07_heap_priority_queue/39_top_k_elements/take-gifts-from-the-richest-pile.cpp
-        07_heap_priority_queue/39_top_k_elements/kth-largest-element-in-a-stream.cpp
+        15_design/96_general_design/kth-largest-element-in-a-stream.cpp
         08_binary_search/43_sorted_array_search/binarySearch.cpp
         08_binary_search/43_sorted_array_search/search-a-2D-array.cpp
         08_binary_search/46_binary_search_on_answer/Koko-eating-bananas.cpp
@@ -307,8 +309,8 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         12_dynamic_programming/Decode_ways.cpp
         12_dynamic_programming/75_kadane_max_min_subarray/maximum_product_subarray.cpp
         12_dynamic_programming/80_word_break/word_break.cpp
-        09_graphs/find_the_town_judge.cpp
-        09_graphs/island_perimeter.cpp
+        09_graphs/48_dfs_connected_components/find_the_town_judge.cpp
+        09_graphs/48_dfs_connected_components/island_perimeter.cpp
         09_graphs/48_dfs_connected_components/clone_graph_unsafe.cpp
         09_graphs/49_bfs_connected_components/clone_graph.cpp
         01_two_pointers/01_converging/trapping_rain_water.cpp
@@ -322,11 +324,10 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         03_linked_list/19_inplace_reversal/reverse-nodes-in-kGroup.cpp
         12_dynamic_programming/generate_parenthesis.cpp
         03_linked_list/linkedList_Cycle_II.cpp
-        15_design/96_general_design/LRUCACHE_2.cpp
         06_stack/38_largest_rectangle_histogram/largest_rectangle_in_histogram.cpp
         06_stack/Car_Fleet.cpp
-        06_stack/implement_queue_using_stacks.cpp
-        06_stack/implement_stacks_using_queue.cpp
+        15_design/96_general_design/implement_queue_using_stacks.cpp
+        15_design/96_general_design/implement_stacks_using_queue.cpp
         06_stack/BaseBallGame.cpp
         07_heap_priority_queue/39_top_k_elements/last_stone_weight.cpp
         07_heap_priority_queue/39_top_k_elements/k_closest_points_to_origin.cpp
@@ -348,8 +349,8 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         09_graphs/49_bfs_connected_components/open_the_lock.cpp
         09_graphs/49_bfs_connected_components/shortest_path_in_Binary_matrix.cpp
         09_graphs/49_bfs_connected_components/word_ladder.cpp
-        09_graphs/surrounded_regions.cpp
-        09_graphs/max_area_of_island.cpp
+        09_graphs/48_dfs_connected_components/surrounded_regions.cpp
+        09_graphs/48_dfs_connected_components/max_area_of_island.cpp
         09_graphs/48_dfs_connected_components/pacific_atlantic_water_flow.cpp
         09_graphs/multiSource-BFS/walls_and_gates.cpp
         09_graphs/multiSource-BFS/01_matrix.cpp
@@ -370,7 +371,7 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         02_array_matrix/longest_common_prefix.cpp
         02_array_matrix/remove_element.cpp
         02_array_matrix/majority_element.cpp
-        02_array_matrix/design_hashset.cpp
+        15_design/96_general_design/design_hashset_easy.cpp
         sort_an_array.cpp
         02_array_matrix/encode_and_decode_string.cpp
         "02_array_matrix/16_prefix_sum-Subarray and Range Query/range_sum_query_2D_immutable.cpp"
@@ -394,4 +395,23 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         11_backtracking/71_word_search_grid_path/word_search_ii.cpp
         12_dynamic_programming/79_longest_common_subsequence/longest_common_sunsequence.cpp
         12_dynamic_programming/79_longest_common_subsequence/longest_palindromic_subsequence.cpp
+        12_dynamic_programming/grid/minimum_path_sum.cpp
+        "12_dynamic_programming/76_unique_paths/unique paths_i.cpp"
+        12_dynamic_programming/76_unique_paths/unique_paths_ii.cpp
+        09_graphs/48_dfs_connected_components/surrounded_regions_type2.cpp
+        09_graphs/48_dfs_connected_components/surrounded_regions_type2.cpp
+        09_graphs/48_dfs_connected_components/surrounded_regions_type2.cpp
+        09_graphs/48_dfs_connected_components/surrounded_regions_type2.cpp
+        09_graphs/multiSource-BFS/01_matrix_another_style.cpp
+        09_graphs/multiSource-BFS/as_far_from_land_as_possible.cpp
+        09_graphs/52_bfs_topological_sort_kahn/minimum_height_trees.cpp
+        09_graphs/53_union_find_dsu/merge_accounts_explained.cpp
+        15_design/96_general_design/design_hashset_interview.cpp
+        15_design/96_general_design/design_hashmap_easy.cpp
+        15_design/96_general_design/design_hashmap_interview.cpp
+        15_design/96_general_design/find_median_from_data_stream.cpp
+        15_design/96_general_design/serialize-and-deserialize-binary-tree_.cpp
+        15_design/96_general_design/timeBased_key_value_store.cpp
+        15_design/96_general_design/implement_trie_prefix_tree.cpp
+        15_design/96_general_design/design_add_and_search_words_data_structure.cpp
 )

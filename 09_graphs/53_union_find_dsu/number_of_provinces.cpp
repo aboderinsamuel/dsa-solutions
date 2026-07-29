@@ -1,36 +1,50 @@
+///NB: For union Find: "That's counting connected components in an undirected graph, given as an adjacency matrix."
+
+
 #include <vector>
 #include <numeric>
 using namespace std;
 
-class DSU {
+struct DSU {
     vector<int> parent, rank_;
-public:
-    DSU(int n) : parent(n), rank_(n, 0) {
-        iota(parent.begin(), parent.end(), 0);
+    int components;
+
+    explicit DSU(int n) : parent(n), rank_(n, 0), components(n) {
+        for (int i = 0; i < n; ++i) parent[i] = i;
     }
+
     int find(int x) {
-        if (parent[x] != x) parent[x] = find(parent[x]);  // path compression
-        return parent[x];
+        while (parent[x] != x) {
+            parent[x] = parent[parent[x]];       // path halving
+            x = parent[x];
+        }
+        return x;
     }
-    bool unite(int a, int b) {                 // returns false if already joined
-        int ra = find(a), rb = find(b);
-        if (ra == rb) return false;
-        if (rank_[ra] < rank_[rb]) swap(ra, rb);
-        parent[rb] = ra;
-        if (rank_[ra] == rank_[rb]) ++rank_[ra];
+
+    bool unite(int a, int b) {
+        int rootA = find(a), rootB = find(b);
+        if (rootA == rootB) return false;        // already same province
+
+        if (rank_[rootA] < rank_[rootB]) swap(rootA, rootB);
+        parent[rootB] = rootA;                   // shallower under deeper
+        if (rank_[rootA] == rank_[rootB]) ++rank_[rootA];
+
+        --components;                            // two provinces became one
         return true;
     }
 };
 
 class Solution {
 public:
-    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
-        int n = edges.size();          // n nodes, labeled 1..n
-        DSU dsu(n + 1);                // +1 because labels are 1-indexed
-        for (auto& e : edges) {
-            if (!dsu.unite(e[0], e[1]))  // endpoints already connected → cycle
-                return e;
-        }
-        return {};                     // guaranteed unreachable per constraints
+    int findCircleNum(vector<vector<int>>& isConnected) {
+        int n = isConnected.size();
+        DSU dsu(n);
+
+        for (int i = 0; i < n; ++i)
+            for (int j = i + 1; j < n; ++j)      // upper triangle only
+                if (isConnected[i][j] == 1)
+                    dsu.unite(i, j);
+
+        return dsu.components;
     }
 };

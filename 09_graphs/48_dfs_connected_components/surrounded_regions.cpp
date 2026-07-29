@@ -3,6 +3,7 @@ using namespace std;
 class Solution {
 public:
     //4 directions
+    //  OR static constexpr pair<int, int> directions[4] = {{1,0},{-1,0},{0,-1},{0,1}};
     vector<pair<int, int>> directions = {{1,0},{-1,0},{0,-1},{0,1}};
     void dfs(vector<vector<char>>& board, int row, int col){
         //outside the board?

@@ -2,25 +2,27 @@
 #include <unordered_map>
 #include <cstdlib>
 
+using namespace std;
+
 
 class RandomizedSet {
 private:
-    std::vector<int> nums;
-    std::unordered_map<int, int> valToIndex;
+    vector<int> nums;
+    unordered_map<int, int> valToIndex;
 public:
     RandomizedSet() {
         //automatically initialized
     }
     bool insert(int val) {
-        if (valToIndex.count(val) > 0) {
-            return false;
+        if (valToIndex.count(val) == 0) {
+            nums.push_back(val);
+            valToIndex[val] = nums.size()-1;
+            return true;
         }
-        nums.push_back(val);
-        valToIndex[val] = nums.size()-1;
-        return true;
+        return false;
     }
     bool remove(int val) {
-        if (valToIndex.count(val) > 0) {
+        if (valToIndex.count(val) == 0) {
             return false;
         }
         int indexToRemove = valToIndex[val]; //find where target value lives

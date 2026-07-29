@@ -7,34 +7,33 @@ using namespace std;
 class Solution {
 public:
     int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-        unordered_set<string> words(wordList.begin(), wordList.end());
-        if(!words.count(endWord)) return 0;
+        unordered_set<string> dict(wordList.begin(), wordList.end());
+        if(!dict.count(endWord)) return 0;
+
         queue<string> q;
         q.push(beginWord);
+        dict.erase(beginWord);
+        int level = 1;
 
-        unordered_set<string> visited;
-        visited.insert(beginWord);
-        int length = 1;
         while(!q.empty()){
             int size = q.size();
             while(size--){
                 string word = q.front();
                 q.pop();
-                if(word == endWord) return length;
-
-                for(int i=0; i<word.size(); i++){
+                if(word == endWord) return level;
+                for(int i=0; i<(int)word.size(); i++){
                     char original = word[i];
-                    for(char c = 'a'; c <= 'z'; c++){
+                    for(char c = 'a'; c <= 'z'; ++c){
                         word[i] = c;
-                        if(!words.count(word)) continue;
-                        if(visited.count(word)) continue;
-                        visited.insert(word);
-                        q.push(word);
+                        if(dict.count(word)){
+                            dict.erase(word);
+                            q.push(word);
+                        }
                     }
                     word[i] = original;
                 }
             }
-            length++;
+            level++;
         }
         return 0;
     }
