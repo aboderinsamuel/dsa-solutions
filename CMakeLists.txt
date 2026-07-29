@@ -414,4 +414,11 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         15_design/96_general_design/timeBased_key_value_store.cpp
         15_design/96_general_design/implement_trie_prefix_tree.cpp
         15_design/96_general_design/design_add_and_search_words_data_structure.cpp
+        15_design/96_general_design/design_circular_queue.cpp
+        15_design/96_general_design/design_circular_deque.cpp
+        15_design/96_general_design/design_hit_counter.cpp
+        15_design/96_general_design/logger_rate_limiter.cpp
+        15_design/96_general_design/design_browser_history.cpp
+        15_design/96_general_design/snapshot_array.cpp
+        15_design/96_general_design/design_underground_system.cpp
 )

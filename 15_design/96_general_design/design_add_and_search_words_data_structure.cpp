@@ -1,3 +1,5 @@
+#include <string>
+using namespace std;
 class TrieNode {
 public:
     bool isWord;
