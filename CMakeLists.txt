@@ -421,4 +421,14 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         15_design/96_general_design/design_browser_history.cpp
         15_design/96_general_design/snapshot_array.cpp
         15_design/96_general_design/design_underground_system.cpp
+        15_design/96_general_design/LFU_cache.cpp
+        15_design/96_general_design/flatten_nested_list_iterator.cpp
+        15_design/96_general_design/binary_search_tree_iterator.cpp
+        15_design/96_general_design/design_file_system.cpp
+        15_design/96_general_design/design_in-memory_file_system.cpp
+        15_design/Meta/custom_interview_with_festus_2nd_August_2026.cpp
+        15_design/binary_search_pattern.cpp
+        08_binary_search/find_minimum_in_rotated_sorted_array.cpp
+        08_binary_search/search_in_otated_sorted_array.cpp
+        03_linked_list/copy_list_with_random_pointer.cpp
 )

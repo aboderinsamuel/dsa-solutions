@@ -4,16 +4,17 @@ using namespace std;
 
 // Hashmap  + Doubly linked list = LRU Cache
 
-struct Node {
-    int key;
-    int val;
-    Node* prev;
-    Node* next;
-    Node(int k, int v) : key(k), val(v), prev(nullptr), next(nullptr) {}
-};
 
 class LRUCache {
 private:
+    struct Node {
+        int key;
+        int val;
+        Node* prev;
+        Node* next;
+        Node(int k, int v) : key(k), val(v), prev(nullptr), next(nullptr) {}
+    };
+
     int capacity;
     unordered_map<int, Node*> cache;
 
