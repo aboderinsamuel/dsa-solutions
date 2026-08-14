@@ -431,4 +431,10 @@ add_executable(twosum.cpp 01_two_pointers/01_converging/twosum.cpp
         08_binary_search/find_minimum_in_rotated_sorted_array.cpp
         08_binary_search/search_in_otated_sorted_array.cpp
         03_linked_list/copy_list_with_random_pointer.cpp
+        12_dynamic_programming/81_longest_increasing_subsequence/longest_palindromic_substring_dp.cpp
+        12_dynamic_programming/81_longest_increasing_subsequence/palindromic_substring.cpp
+        12_dynamic_programming/78_coin_change/coin_change_ii.cpp
+        02_array_matrix/contains_duplicate.cpp
+        _mw_/q1.cpp
+        _mw_/q2.cpp
 )

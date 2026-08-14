@@ -25,7 +25,7 @@ public:
             int j = i;
             while (s[j] != '#') j++;
             //charactersfrom i to j-1 reps string length
-            int length = stoi(s.substr(i, j-1));
+            int length = stoi(s.substr(i, j-i));
             j++;
             result.push_back(s.substr(j, length));
             i = j + length;

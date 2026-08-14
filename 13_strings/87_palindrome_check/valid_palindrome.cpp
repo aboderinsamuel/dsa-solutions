@@ -8,9 +8,9 @@ public:
         int end = s.size()-1;
 
         while (start < end) {
-            if (!isalnum(s[start])) {
+            if (start < end && !isalnum(s[start])) {
                 start++;
-            }else if (!isalnum(s[end])) {
+            }else if (start < end && !isalnum(s[end])) {
                 end--;
             }else if (tolower(s[start]) != tolower(s[end])) {
                 return false;
